@@ -1,84 +1,168 @@
+/*--Header--*/
+
 body{
     padding: 0;
     margin: 0;
-    background-color: rgb(228, 229, 231);
-    box-sizing: border-box;
-    
-}
-header{
-    display: flex;
-    justify-content: flex-end;
-    
-}
-header ul{
-    list-style: none;
-}
-header ul li{
-    padding: 10px;
-    float: left;
-    font-size: 14px;
-}
-header ul li a{
-    text-decoration: none;
-}
-header ul li button{
-    background-color: rgb(87, 174, 250);
-    width: 80px;
-    height: 40px;
-    border: none;
-    border-radius: 25px;
-    font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: rgb(0, 0, 0);
-    margin-top: -10px;
+    box-sizing: border-box;
 }
-
-/*--*/
-.main{
-    position: relative;
-    margin: 8%;
-}
-.main .logo{
+section{
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    background-color: rgb(229, 233, 237);
+    width: 100%;
+    min-height: 100vh;
 }
-.main .search{
-    justify-content: center;
-    display: flex;
-    position: relative;
-}
-.main .search input{
-    width: 580px;
-    height: 45px;
-    border: 1px solid gray;
-    outline: none;
-    border-radius: 30px;
-    background-color: rgb(222, 230, 241);
-}
-.main .icons{
+section header{
+    width: 100%;
+    position: absolute;
     display: flex;
     top: 0;
+    justify-content: flex-end;
+}
+section header ul{
+    margin-right: 10px;
+    display: flex;
+    list-style: none;
+    margin-left: 40px;
+}
+section header ul li{
+    padding: 10px;
+    font-size: 13px;
+}
+section header ul li a{
+    text-decoration: none;
+    color: #101010;
+}
+
+section header ul li a:hover{
+   text-decoration: underline;
+}
+section header ul li button{
+    background-color: rgb(102, 180, 248);
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -14px;
+    cursor: pointer;
+}
+/*--Header--*/
+
+/*--Main--*/
+.main{
+    margin-top: -30px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.main .logo{
+    padding: 10px;
+    text-align: center;
+    margin-top: 80px;
+}
+.main .searchbox{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+.main .searchbox .search{
+    width: 470px;
+    height: 43px;
+    border: 1px solid #9b9999;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main .searchbox .icons{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    width: 540px;
+    padding: 12px 30px;
 }
 .main .buttons{
-    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 .main .buttons button{
-    display: flex;
-    padding: 12px;
-    height: 38px;
-    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    background-color: rgb(197, 198, 200);
+    font-size: 14px;
+    padding: 9px;
     border: none;
-    border-radius: 3px;
+    background-color: #cbcaca;
+    cursor: pointer;
+    margin: 6px;
+    border-radius: 5px;
 }
-.main .buttons .b2{
-    margin-left: 10px;
+.main .buttons button:hover{
+    border: 1px solid rgb(152, 148, 148);
 }
+.main .lang{
+    justify-content: center;
+    text-align: center;
+    font-size: 13px;
+}
+.main .lang a{
+    text-decoration: none;
+}
+/*--Main--*/
+
+/*--Footer--*/
+section .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+section .footer .h1{
+    background-color: #1f1f1f;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: aliceblue;
+    padding-left: 30px;
+}
+section .footer .raw{
+    margin-top: 0.6px;
+    background-color: #1f1f1f;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 45px;
+}
+section .footer .raw ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 35px;
+}
+section .footer .raw ul li{
+    padding: 10px;
+}
+section .footer .raw ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+section .footer .raw ul li a:hover{
+    text-decoration: underline;
+}
+
+/*--Footer--*/
